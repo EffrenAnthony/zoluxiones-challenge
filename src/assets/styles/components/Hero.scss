@@ -1,0 +1,76 @@
+@import '../variables';
+.hero__container{
+  background-color: #F7F8FC;
+  position: relative;
+  height: 100vmin
+}
+.hero__images--container{
+  position: absolute;
+  margin-top: 5rem;
+  z-index: 2;
+}
+.hero__images--clouds{
+  position: absolute;
+  top: 4em;
+  left: 13rem;
+  height: 17.1em;
+  z-index: 4;
+}
+.hero__images--main{
+  position: absolute;
+  left: 13rem;
+  top: 6rem;
+  z-index: 4;
+  height: 25em;
+}
+
+.hero__images--three{
+  position: relative;
+  top: 15em;
+  left: 38.5em;
+  height: 12.3em;
+  z-index: 3;
+}
+.hero__images--build{
+  position: absolute;
+  top: 3rem;
+  height: 22.5em;
+  z-index:3;
+}
+
+.hero__info--container{
+  background-color: #ECF0FF;
+  margin-top: 27em;
+  padding: 20% 0 25% 0;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  h1 {
+    color: $primaryColor;
+    font-weight: normal;
+    font-size: 3.6em;
+    &::first-line{
+      color: $greyTitle
+    }
+  }
+  p{
+    font-size: 1.4em;
+    color: $greyParagraph
+  }
+}
+
+@media (min-width: 1800px){
+  .hero__images--three{
+    left: 45.7em;
+  }
+  .hero__images--main{
+    left: 16rem;
+  }
+  .hero__info--container{
+    padding: 20% 0 20% 0;
+  }
+}

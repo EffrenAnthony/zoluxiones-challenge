@@ -1,0 +1,117 @@
+@import '../variables';
+.homeform__container{
+  height: 100vmin;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  h1{
+    font-size: 36px;
+    font-weight: normal;
+    color: $greyTitle;
+    margin-bottom: 24px;
+  }
+}
+.homeform__input--group{
+  width: 288px;
+}
+.homeform__input--group-dni{
+  display: flex;
+  width: 100%;
+}
+.homeform__input{
+  width: 100%;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  &:first-child{
+    width: 136%;
+    border-top-left-radius: 4.03px !important;
+    border-bottom-left-radius: 4.03px !important;
+  }
+}
+.homeform__input--select{
+  border-right: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;  
+  
+}
+
+.homeform__input--politics{
+  margin-top: 24px;
+  display: flex;
+  p{
+    margin-left: 12px;
+    font-size: 1.2em;
+    line-height: 25px;
+    font-weight: 300;
+    color: $greyParagraph;
+  }
+  a{
+    text-decoration: underline;
+    font-weight: 400;
+    color: $greyParagraph;
+  }
+  .homeform__input--label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    .homeform__input--checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      border-radius: 5px;
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+    }
+  
+    &:hover input ~ .homeform__input--checkmark{
+      background-color: #ccc;
+    }
+  }
+  
+  .homeform__input--label input:checked ~ .homeform__input--checkmark {
+    background-color: $green;
+  }
+  
+  .homeform__input--label input:checked ~ .homeform__input--checkmark:after {
+    display: block;
+  }
+  
+  .homeform__input--label .homeform__input--checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+
+.homeform__button--submit{
+  width: 192px;
+  margin-top: 40px;
+}

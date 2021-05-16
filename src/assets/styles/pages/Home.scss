@@ -1,0 +1,11 @@
+.home__container{
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+@media (min-width: 576px){
+  .home__container{
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+}

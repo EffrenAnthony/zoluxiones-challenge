@@ -1,11 +1,20 @@
-import Logo from './assets/react_logo.png'
+import { Layout } from './Layout'
+import { Home } from './pages/Home'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.scss'
+import './assets/styles/commons.scss'
+import { Main } from './pages/Main'
 const App = () => {
-  const number: number = 27
   return (
     <>
-    <h1>Hola Mundo {number}</h1>
-    <img src={Logo} alt='elefante' style={{height: '100px'}}/>
+    <Router>
+      <Layout>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/main" component={Main} />
+        </Switch>
+      </Layout>
+    </Router>
     </>
     )
 }

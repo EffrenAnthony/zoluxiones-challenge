@@ -1,0 +1,25 @@
+@import '../variables';
+.header__container{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  .header__image{
+    height:1.6em;
+    margin-left: 120px;
+  }
+  
+  .header__info--container{
+    margin-right: 120px;
+    display: flex;
+    height: 2em;
+    color: $greyParagraph;
+    .header__call--container{
+      margin-left: 41px;
+      color: $secondaryColor;
+      display: flex;
+    } 
+  }
+}
