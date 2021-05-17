@@ -1,0 +1,22 @@
+.main__container{
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+@media (min-width: 576px){
+  .main__container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+}
+
+.mainview__container{
+  width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}

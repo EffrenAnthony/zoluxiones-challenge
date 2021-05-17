@@ -1,11 +1,12 @@
 @import '../variables';
 .header__container{
-  position: absolute;
+  // position: absolute;
   width: 100%;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   padding: 24px 0;
+  border-bottom: 1px solid #E4E8F7;
   .header__image{
     height:1.6em;
     margin-left: 120px;
@@ -22,4 +23,9 @@
       display: flex;
     } 
   }
+}
+
+.header__container.isHome{
+  position: absolute;
+  border-bottom: 0px solid #E4E8F7;
 }

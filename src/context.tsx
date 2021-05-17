@@ -8,19 +8,19 @@ export function usePersonContext () {
 
 export function PersonProvider ({ children }: any) {
   const [person, setPerson] = useState({})
-  const [licence, setLicence] = useState('')
+  const [carData, setCarData] = useState({})
   function handlePerson (newPerson: Object) {
     return setPerson(newPerson)
   }
-  function handleLicence(licence: string){       
-    return setLicence(licence)
+  function handleCarData(carData: string){       
+    return setCarData(carData)
   }
 
   const value = {
     person,
-    licence,
+    carData,
     handlePerson,
-    handleLicence
+    handleCarData
   }
 
   return (

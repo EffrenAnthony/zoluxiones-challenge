@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import '../assets/styles/pages/Home.scss'
 import { Hero } from '../components/Home/Hero'
 import { HomeForm } from '../components/Home/HomeForm';
+import { Header } from '../components/shared/Header';
 import { usePersonContext } from '../context';
 
 export const Home = () => {
@@ -18,9 +19,12 @@ export const Home = () => {
     )
   },[API])
   return (
+    <>
+    <Header isHome/>
     <div className='home__container'>
       <Hero />
       <HomeForm />
     </div>
+    </>
   )
 }

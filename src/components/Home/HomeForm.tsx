@@ -3,10 +3,10 @@ import { useHistory } from 'react-router-dom'
 import '../../assets/styles/components/HomeForm.scss'
 import { usePersonContext } from '../../context'
 
-export const HomeForm = (props:any) => {
+export const HomeForm = () => {
   const [checked, setChecked] = useState(false)
   const [showTermsError, setShowTermsError] = useState(false)
-  const { handleLicence } = usePersonContext()
+  const { carData, handleCarData } = usePersonContext()
   const history = useHistory()
   const [value, setValue] = useState({
     document: '',
@@ -35,7 +35,7 @@ export const HomeForm = (props:any) => {
       setShowTermsError(true)
     }else {
       // TODO: route to next page     
-      handleLicence(value.licence)
+      handleCarData(...carData, {licence : value.licence})
       history.push('/main')
     }
   }

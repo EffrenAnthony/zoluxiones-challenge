@@ -1,0 +1,218 @@
+@import '../variables';
+.armaplan__container{
+  margin-top: 24px;
+  .armaplan__info--title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    color: $greyTitle;
+  }
+  .armaplan__info--subtitle{
+    color: $greyParagraph;
+    margin-top: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .armaplan__info--carinfo-wrap{
+    position: relative;
+    width:400px;
+    background: #FFFFFF;
+    margin-top: 44px;
+    border: 3px solid #F0F2FA;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 40px 32px;
+    display: flex;
+    justify-content: space-between;
+    .armaplan__info--carinfo{
+      width: 100%;
+      p{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: $greyParagraph;
+      }
+      h4{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        color: $greyTitle;
+      }
+      a{
+        margin-top:16px;
+      }
+    }
+    .armaplan__info--carimage{
+      position: absolute;
+      top: -15px;
+      left: 270px;
+      z-index: 2;
+    }
+  }
+}
+
+.armaplan__coberturas{
+  width: 400px;
+  margin-top: 65px;
+  .armaplan__coberturas--controllers{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 8px;
+    border-bottom: 1px solid $greyBorders;
+    div{
+      text-align: center;
+      padding: 24px;
+      p{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 16px;
+        /* or 160% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+      &:first-child{
+        color: $primaryColor;
+        border-bottom: 2px solid $primaryColor;
+      }
+    }
+  }
+  .armaplan__coberturas--info{
+    height: 300px;   
+    overflow-y: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    .armaplan__cobertura--group{
+      padding: 32px 0px;
+      border-bottom: 1px solid $greyBorders;
+    }
+    p{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: $greyParagraph;
+      margin-left: 72px;
+      margin-top: 20px;
+      text-align: justify;
+    }
+    button{
+      margin-top: 20px;
+      margin-left: 72px;
+    }
+    .armaplan__cobertura--title-container{
+      display: flex;
+      justify-content:space-between;
+      align-items:center;
+      .armaplan__cobertura--labels{
+        display: flex;
+        align-items:center;
+        h3{
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+  .armaplan__coberturas--button{
+    color: $secondaryColor;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    svg{
+      margin-right: 12px;
+    }
+  }
+  
+}
+
+.armaplan__sidebar{
+  margin-top: 150px;
+}
+.armaplan__sidebar--header{
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $greyBorders;
+  h1{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.2px;
+    color: $greyTitle;
+  }
+  p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $greyParagraph;
+  }
+}
+.armaplan__sidebar-items{
+  margin-top: 24px;
+  p{
+    padding-bottom: 4px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $greyTitle;
+  }
+  div{
+    margin-top:8px;
+    display: flex;
+    p{
+      margin-left: 12px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      color: $greyParagraph;
+    }
+  }
+}
+
+.armaplan__button{
+  position: absolute;
+  margin-top:32px;
+  padding: 16px 64px;
+  z-index: 0;
+}

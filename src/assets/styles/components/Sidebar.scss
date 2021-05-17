@@ -1,0 +1,49 @@
+@import '../variables';
+.sidebar__container{
+  height: 85vmin;
+  width: 100%;
+  background-color: $greyBackground;
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .sidebar__info--container{
+    display: flex;
+    flex-direction: column;    
+  }
+}
+.sidebar__item--divider{
+  height: 40px;
+  border-left: 1px dashed #E4E8F7;
+  margin-left: 11px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.sidebar__item.active{
+  display: flex;
+  .sidebar__item--step{
+    background-color: $secondaryColor;
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius:50%;
+    font-size: 12px
+  }
+  .sidebar__item--title{
+    margin-left: 16px;
+    color: $greyTitle
+  }
+}
+.sidebar__item{
+  display: flex;
+  .sidebar__item--step{
+    color: $greyParaLight;
+    padding: 4px 8px 4px 8px;
+    border: 1px solid $greyParaLight;
+    border-radius:50%;
+    font-size: 12px
+  }
+  .sidebar__item--title{
+    margin-left: 16px;
+    color: $greyParaLight
+  }
+}

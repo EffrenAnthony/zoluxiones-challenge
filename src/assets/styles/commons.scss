@@ -28,3 +28,42 @@
     background-color: #d82c38
   }
 }
+
+.common__backbutton{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color:transparent;
+  border: none;
+  font-size: 16px;
+  path{
+    color:$primaryColor;
+  }
+  span{
+    margin-left: 16px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $greyParaLight;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+a{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 16px;        
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding-top: 16px;
+  text-decoration: none;
+  color: $secondaryColor
+}
+
+
+
+
