@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../assets/styles/pages/Main.scss'
+import '../assets/styles/pages/Mainpage.scss'
 import { ArmaPlan } from '../components/Main/ArmaPlan'
 import { DatosAuto } from '../components/Main/DatosAuto'
 import { Sidebar } from '../components/Main/Sidebar'

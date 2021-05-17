@@ -11,7 +11,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin({
+      filename: 'assets/[name].css'
+    })
 
   ],
   resolve: {
