@@ -17,7 +17,7 @@ module.exports = {
 
   ],
   resolve: {
-    extensions: ['.js', '.jsx', '.tsx', '.ts']
+    extensions: ['.js', '.jsx', '.tsx', '.ts', '.scss']
   },
   module: {
     rules: [
@@ -49,8 +49,10 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader
           },
-          'css-loader',
-          'sass-loader'
+          {
+            loader: 'css-loader'
+          },
+          { loader: 'sass-loader' }
         ]
       },
       {
